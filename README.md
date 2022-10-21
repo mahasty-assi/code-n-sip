@@ -10,7 +10,9 @@ Follow ONE of each step
 
 ## Tool for getting Tools <a name="tools"/>
 These tools are meant to help download the different packages, frameworks, languages you'll need to code.
+
 *MACOS*
+
 Using [Homebrew (Macos package manager)](https://brew.sh/) to install what is needed via the terminal.
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -20,6 +22,7 @@ brew install package_name
 ```
 
 *WINDOWS*
+
 Windows Package Manager winget command-line tool is bundled with Windows 11 and modern versions of Windows 10 by default as the App Installer [src](https://learn.microsoft.com/en-us/windows/package-manager/winget/#install-winget)
 ```
 winget search package_name
@@ -41,7 +44,9 @@ Install via terminal
 python --version // check if you have it
 ```
 Or their [website](https://www.python.org/downloads/)
+
 *THEN*
+
 If you have a MAC or LINUX machine
 1. open the terminal
 2. navigate to this project and make a new folder called src 
@@ -147,11 +152,40 @@ npm run start //starts localhost
 [Check it out](https://www.geeksforgeeks.org/angular-cli-angular-project-setup/)
 ```
 npm install - g @angular/cli
-ng new codesip
+ng new codesip // setup environment
 ```
 ### Vue
 [Info here](https://cli.vuejs.org/guide/creating-a-project.html)
 Follow the setup in the link, as you can choose between a new and old setup
+
+### Ember
+Ember.js is an open source, free JavaScript client-side framework used for developing web applications.
+It provides the new binding syntax using the HTMLBars template engine which is a superset of the Handerlbars templating engine.
+It provides the Glimmer rendering engine to increase the rendering speed.
+
+```
+npm install -g ember-cli
+ember new codesip // setup environment
+```
+From [Creating and running application](https://www.tutorialspoint.com/emberjs/emberjs_creating_running_application.htm)
+
+### Mithril
+[Mithril.js](https://mithril.js.org/#getting-started) is a modern client-side JavaScript framework for building Single Page Applications. It's small (< 10kb gzip), fast and provides routing and XHR utilities out of the box.
+For this, follow the [Quick Start with webpack](https://mithril.js.org/installation.html#quick-start-with-webpack) guide
+
+### Polymer
+Polymer.js is an open source JavaScript library developed by Google. It is developed to allow reusing the HTML elements for building applications with components.
+
+```
+npm install -g polymer-cli@next  
+polymer -version  
+polymer init // setup environment 
+
+polymer serve // to start the application
+```
+### Aurelia
+
+### Backbone
 
 ## Svelte
 [setup and tutorial docs!](https://svelte.dev/docs)
@@ -172,8 +206,6 @@ Honestly I have never tried this before so good luck:
 
 ```
 
-### Swift (macos/ios)
-
 ### Nice to have
 If you are new to this, check out [prettier](https://www.npmjs.com/package/prettier) and [eslint](https://www.npmjs.com/package/eslint) to format and check you code.
 In the `package.json` file add (or check that it has) under "scripts":
@@ -186,9 +218,9 @@ then you can run `npm run format` or `npm run lint`
 ## Tool for pretty things <project URL#comp>
 Component libraries make pretty things (icons, buttons, dropdowns, headers etc...) with some level of standardization
 
-### AntUi
-### MaterialUI
-### TailwindUI
+### [AntUI](https://ant.design/components/overview/)
+### [MaterialUI](https://mui.com/material-ui/getting-started/overview/)
+### [TailwindUI](https://tailwindui.com/documentation)
 
 ## Universal Design <a name="uu"/>
 Make the webpage WCAG compliant, considering the requirements given on their website
